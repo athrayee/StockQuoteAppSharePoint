@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="dd42a055-032c-47fa-8c54-25ca3da53e4d" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="StockTicker_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

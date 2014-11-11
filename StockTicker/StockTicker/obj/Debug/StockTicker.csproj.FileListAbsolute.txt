@@ -1,0 +1,3 @@
+c:\users\administrator\documents\visual studio 2012\Projects\StockTicker\StockTicker\bin\Debug\StockTicker.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\StockTicker\StockTicker\obj\Debug\StockTicker.dll
+c:\users\administrator\documents\visual studio 2012\Projects\StockTicker\StockTicker\obj\Debug\StockTicker.pdb

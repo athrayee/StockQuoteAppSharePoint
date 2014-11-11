@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../Content/stockInfo.css" />
+    <title></title>
+</head>
+<body>
+
+    <div data-ng-app="chromecontrol" data-ng-controller="chromecontrolController">
+     <div id="chrome_ctrl_container"></div>
+    </div>
+
+    <div id="stockquote">
+     <div class="stockInfo" data-ng-controller="stockquoteController">
+
+     <div class="companyTitle">
+        <a href='http://finance.yahoo.com/q?s={{quoteresult.Symbol}}' target="_blank" ng-cloak>{{quoteresult.Name}} (Symbol :  {{quoteresult.Symbol}}) </a>
+
+     </div> 
+     <div class="companySymbolDateTime"> {{convertStringToDate(quoteresult.LastTradeDate) | date : dateFormat }}  {{quoteresult.LastTradeTime}}  ET </div>
+     <span class="companyStockPrice"> {{quoteresult.LastTradePriceOnly}} </span>
+     <span ng-class="stockQuoteClass(quoteresult.Change_PercentChange)"> {{quoteresult.Change_PercentChange.split(" - ")[0]}}  ({{quoteresult.Change_PercentChange.split(" - ")[1]}})</span>
+     <div>
+        <div class="companyStockLabels">
+            <div>Days High</div>
+            <div>Days Low</div>
+            <div>52 Week High</div>
+            <div>52 Week Low</div>
+            <div>Market Capitalization</div>
+        </div>
+        <div class="companyStockValues">
+            <div ng-cloak>{{quoteresult.DaysHigh}}</div>
+            <div ng-cloak>{{quoteresult.DaysLow}}</div>
+            <div ng-cloak>{{quoteresult.YearHigh }}</div>
+            <div ng-cloak>{{quoteresult.YearLow }}</div>
+            <div ng-cloak>{{quoteresult.MarketCapitalization }}</div>
+        </div>
+            
+    </div>
+   </div>
+  </div>
+
+
+    <script type="text/javascript" src="../Scripts/jquery-1.10.2.min.js"></script>
+     <script src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js" type="text/javascript"></script>
+     <script src="/_layouts/15/init.js"></script>
+     <script src="/_layouts/15/core.js"></script>
+     <script type="text/javascript" src="/_layouts/15/SP.UI.Controls.js"></script>
+     <script type="text/javascript" src="../Scripts/jquery-extensions.js"></script>
+     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+
+    <!-- Chrome Control -->
+    <script type="text/javascript" src="../js/chromecontrol/chromecontrolapp.js"></script>
+    <script type="text/javascript" src="../js/chromecontrol/chromecontrolcontroller.js"></script>
+
+    <!-- Stock Quote -->
+
+    <script type="text/javascript" src="../js/stockquotecontrol/stockquoteapp.js"></script>
+    <script type="text/javascript" src="../js/stockquotecontrol/stockquotecontroller.js"></script>
+     <script type="text/javascript" src="../js/stockquotecontrol/services.js"></script>
+    
+</body>
+     
+</html>

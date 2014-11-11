@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="RootModule">
+    <File Path="js\chromecontrol\chromecontrolapp.js" Url="js/chromecontrol/chromecontrolapp.js" ReplaceContent="TRUE" />
+    <File Path="js\chromecontrol\chromecontrolcontroller.js" Url="js/chromecontrol/chromecontrolcontroller.js" ReplaceContent="TRUE" />
+    <File Path="js\stockquotecontrol\stockquoteapp.js" Url="js/stockquotecontrol/stockquoteapp.js" ReplaceContent="TRUE" />
+    <File Path="js\stockquotecontrol\services.js" Url="js/stockquotecontrol/services.js" ReplaceContent="TRUE" />
+    <File Path="js\stockquotecontrol\stockquotecontroller.js" Url="js/stockquotecontrol/stockquotecontroller.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

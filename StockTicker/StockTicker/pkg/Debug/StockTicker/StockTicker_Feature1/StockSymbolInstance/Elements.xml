@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Stock Symbol" OnQuickLaunch="TRUE" TemplateType="10000" Url="Lists/Stock Symbol" Description="My List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">GOOG</Field>
+          <Field Name="DateFormat">dd-MMM-yyyy</Field>
+        </Row>
+      </Rows>
+    </Data>
+    
+  </ListInstance>
+</Elements>
